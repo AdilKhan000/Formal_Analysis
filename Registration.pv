@@ -103,11 +103,11 @@ let processAdminServer(id_AS: bitstring, skAS: skey) =
 
 
 (* Correspondence Properties *)
-query eid:bitstring, pke:pkey, st:bitstring, nonce: bitstring; 
+query eid:bitstring, pke:pkey; 
   event(Registration_complete(eid, pke)) ==> event(E_initiates_registration(eid, pke)).
 
 (* Injectivity Properties *)
-query eid:bitstring, pke:pkey, st:bitstring, nonce: bitstring; 
+query eid:bitstring, pke:pkey; 
   inj-event(Registration_complete(eid, pke)) ==> inj-event(E_initiates_registration(eid, pke)).
 
 (* --- Main Process --- *)
