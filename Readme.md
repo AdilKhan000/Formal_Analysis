@@ -1,4 +1,4 @@
-# Formal Analysis of State Token Relay Protocol using ProVerif
+# Formal Analysis of State Token Relay Protocol(STRP) using ProVerif
 
 This repository contains the ProVerif scripts for the formal security analysis of the STRP protocol. The analysis covers two main phases of the protocol: Registration and Authentication.
 
