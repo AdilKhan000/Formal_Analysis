@@ -1,10 +1,10 @@
-# Formal Analysis of [Your Protocol Name] Protocol using ProVerif
+# Formal Analysis of STRP Protocol using ProVerif
 
-This repository contains the ProVerif scripts for the formal security analysis of the [Your Protocol Name] protocol. The analysis covers two main phases of the protocol: Registration and Authentication.
+This repository contains the ProVerif scripts for the formal security analysis of the STRP protocol. The analysis covers two main phases of the protocol: Registration and Authentication.
 
 ## Overview
 
-The [Your Protocol Name] protocol is designed to [briefly state the main purpose of your protocol, e.g., "enable secure communication and mutual authentication between users and multiple services in a distributed environment"]. This formal analysis aims to verify key security properties under the Dolev-Yao attacker model, which assumes the attacker has full control over the network.
+The STRP protocol is designed to enable secure communication and mutual authentication between users and multiple services in a multiserver environment. This formal analysis aims to verify key security properties under the Dolev-Yao attacker model, which assumes the attacker has full control over the network.
 
 ## Tool Used
 
@@ -16,6 +16,8 @@ The repository includes the following ProVerif (`.pv`) files:
 
 - `Registration.pv`: Models the registration phase where entities (Users/Servers) establish their identities and credentials with an Admin Server. This phase is assumed to occur over a secure (private) channel.
 - `Authentication.pv`: Models the authentication phase where a User authenticates to one or more Servers (Si, Sj) potentially involving interaction with an Admin Server. This phase largely occurs over public channels.
+- `Authentication_output.txt`: This file contains the actual output that the Proverif script Authentication.pv generates.
+- `Registration_output.txt`: This file contains the actual output that the Proverif script Registration.pv generates.
 
 ## Security Properties Verified
 
